@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+
+<listeners>
+
+<listener class=name="com.test.ReportLogListener"></listener>
+</listeners>
+
+<test name="Test1">
+	<classes>
+		<class name="com.test.NewTest6 />"
+	</classes>
+</test> <!--  Test -->
+
+<test name="Test2">
+	<classes>
+		<class name="com.test.NewTest7 />"
+	</classes>
+</test> <!--  Test -->
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.test.NewTest6"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
